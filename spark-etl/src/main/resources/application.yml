@@ -1,0 +1,18 @@
+spark:
+  master: local[8]
+  app-name: spark-etl
+  configurations:
+
+kafka:
+  bootstrap-servers: "localhost:9092"
+  topic: "sample-etl"
+  consumer-poll-timeout: 10000
+  starting-offsets: latest
+  fail-on-data-loss: false
+
+postgres:
+  driver: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/asoiaf
+  user: etl
+  password: etlpassword
+  trigger: 5 minutes
