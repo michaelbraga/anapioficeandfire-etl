@@ -11,6 +11,7 @@ docker-compose up --build --remove-orphans
 ### Start Spark Streaming ETL
 Structure streaming that reads from kafka and stores data to Postgres.
 Wait till kafka has created the topic, and postgres has properly started.
+To adjust number of cores for spark, edit `application.yaml`.
 
 ``` 
 cd spark-etl/
