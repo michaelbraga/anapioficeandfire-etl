@@ -23,6 +23,8 @@ java -jar target/spark-etl-1.0.jar
 ### Start API data extractor for anapioficeandfire.com/api
 A Depth-First Search algorithm implemented in Java to get all books, characters, and houses retrievable in [API of Ice And Fire](http://anapioficeandfire.com/). The root url is `anapioficeandfire.com/api` which returns data about some books and houses, which is then used as neighbors to crawl connections on other data.
 
+Also, data are cached locally.
+
 Data is then sent to kafka for Spark ETL app to consume, transform, and load to the database.
 
 ```
