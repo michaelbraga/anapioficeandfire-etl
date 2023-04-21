@@ -18,7 +18,7 @@
     <description>A spark ETL program</description>
 
     <properties>
-        <spark.version>2.4.5</spark.version>
+        <spark.version>3.4.0</spark.version>
         <java.version>1.8</java.version>
         <postgres.version>42.2.12</postgres.version>
     </properties>
